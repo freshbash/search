@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <style>
+            .input{
+                width: 522px;
+                height: 32px;
+                border: 1px solid #d9d9d9;
+                padding: 1px 8px;
+            }
+
+            .input:focus{
+                outline: none;
+                border: 1px solid rgb(64, 159, 247);
+            }
+            .inpdiv{
+                border: none;
+                border-radius: 1px;
+                height: 41px;
+            }
+            .advsrc{
+                width: 120px;
+                height: 30px;
+                margin: 10px 0px;
+                padding: 0px 12px;
+                background-color: #357ae8;
+                border: 1px solid #2f5bb7;
+                color: #fff;
+                border-radius: 2px;
+                font-size: 11px;
+                font-weight: bold;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="display: flex; margin: 18px;">
+                <div>
+                    <img src="images/googlelogo_sml.png" alt="google">
+                </div>
+                <div class="ms-auto" style="width: 100px;">
+                    <a href="index.html" style="color: rgba(0,0,0,.87); font-size: 14px; font-family: Arial, sans-serif;">Google Search</a>
+                </div>
+            </div>
+        </header>
+        <div style="margin: 25px 35px; color: #d93025; font-size: 20px;">
+            <label style="margin-left: 10px;">Advanced Search</label>
+        </div>
+        <div style=" border-bottom: 1px solid #ebebeb;"></div>
+        <div style="margin: 40px 27px 0px 45px;">
+            <form action="https://www.google.com/search">
+                <div style="display: flex; justify-content: left;">
+                    <div style="height: 41px; font-size: 16px; font-weight: 500; font-family: Arial, sans-serif; color: #333;">
+                        <label>Find pages with...</label>
+                    </div>
+                    <div style="width: 570px; height: 41px;"></div>
+                    <div style="height: 41px; font-size: 13px; font-weight: 700; font-family: Arial, sans-serif; color: #777; padding-left: 5px;">To do this in the search box.</div>
+                </div>
+                <div style="display: flex; justify-content: left;">
+                    <div style="width: 182px; height: 41px;">
+                        <label style=" font-size: 13px; font-family: Arial, sans-serif; color: #222;">all these words:</label>
+                    </div>
+                    <div class="inpdiv">
+                        <input class="input" type="text" name="as_q">
+                    </div>
+                    <div style="margin: 0px 0px 8px 11px; padding-left: 5px; width: 369.8px;">
+                        <label style="font-size: 11px; font-family: Arial, sans-serif; color: #555;">Type the important words: tri-colour rat terrier</label>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: left;">
+                    <div style="width: 182px;">
+                        <label style=" font-size: 13px; font-family: Arial, sans-serif; color: #222;">this exact word or phrase:</label>
+                    </div>
+                    <div class="inpdiv">
+                        <input class="input" type="text" name="as_epq">
+                    </div>
+                    <div style="margin: 0px 0px 8px 11px; padding-left: 5px; width: 369.8px;">
+                        <label style="font-size: 11px; font-family: Arial, sans-serif; color: #555;">Put exact words in quotes: "rat terrier"</label>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: left;">
+                    <div style="width: 182px;">
+                        <label style=" font-size: 13px; font-family: Arial, sans-serif; color: #222;">any of these words:</label>
+                    </div>
+                    <div class="inpdiv">
+                        <input class="input" type="text" name="as_oq">
+                    </div>
+                    <div style="margin: 0px 0px 8px 11px; padding-left: 5px; width: 369.8px;">
+                        <label style="font-size: 11px; font-family: Arial, sans-serif; color: #555;">Type OR between all the words you want: miniature OR standard</label>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: left;">
+                    <div style="width: 182px;">
+                        <label style=" font-size: 13px; font-family: Arial, sans-serif; color: #222;">none of these words:</label>
+                    </div>
+                    <div class="inpdiv">
+                        <input class="input" type="text" name="as_eq">
+                    </div>
+                    <div style="margin: 0px 0px 8px 11px; padding-left: 5px; width: 369.8px;">
+                        <label style="font-size: 11px; font-family: Arial, sans-serif; color: #555;">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: left;">
+                    <div style="width: 182px;"></div>
+                    <div style="text-align: right; border: none; border-radius: 1px; width: 522px; height: 50px;">
+                        <input class="advsrc" type="submit" value="Advanced Search">
+                    </div>
+                    <div style="margin: 0px 0px 8px 11px; padding-left: 5px;"></div>
+                </div>
+                <div style=" border-top: 1px solid #ebebeb; margin: 18px 0px; width: 1073.8px;"></div>
+            </form>
+        </div>
+        <div style="height: 20px; margin-top: 80px;"></div>
+        <div style="background-color: #eeeeee; height: 46px; border-bottom: 1px solid rgb(190, 189, 189);"></div>
+        <div style="display: flex; background-color: #eeeeee; height: 46px;">
+            <div style="display: flex; justify-content: left;">
+                <div style="padding: 15px; font-size: 14px;">About</div>
+                <div style="padding: 15px; font-size: 14px;">Advertising</div>
+                <div style="padding: 15px; font-size: 14px;">Business</div>
+                <div style="padding: 15px; font-size: 14px;">How Search works</div>
+            </div>
+            <div class="ms-auto" style="display: flex; justify-content: right;">
+                <div style="padding: 15px; font-size: 14px;">Privacy</div>
+                <div style="padding: 15px; font-size: 14px;">Terms</div>
+                <div style="padding: 15px; font-size: 14px;">Settings</div>
+            </div>
+        </div>
+    </body>
+</html>
